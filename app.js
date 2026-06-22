@@ -6,6 +6,7 @@ import movieRoutes from "./routes/movieRoutes.js";
 import employeeRouter from "./routes/employeeRoutes.js";
 import expenseRouter from "./routes/expenseRoutes.js";
 import bookRouter from "./routes/booksRoutes.js";
+import orderRouter from "./routes/orderRoutes.js";
 
 const app = express();
 app.use(express.json());
@@ -17,5 +18,6 @@ app.use("/", movieRoutes);
 app.use("/", employeeRouter);
 app.use("/", expenseRouter);
 app.use("/", bookRouter);
+app.use("/", orderRouter);
 
 export default app;
