@@ -3,12 +3,15 @@ import eventRoutes from "./routes/eventRoutes.js";
 import studentRoutes from "./routes/studentRoutes.js";
 import productRoutes from "./routes/productRoutes.js";
 import movieRoutes from "./routes/movieRoutes.js";
+import employeeRouter from "./routes/employeeRoutes.js";
 
 const app = express();
 app.use(express.json());
+
 app.use("/", studentRoutes);
 app.use("/", eventRoutes);
 app.use("/", productRoutes);
 app.use("/", movieRoutes);
+app.use("/", employeeRouter);
 
 export default app;
